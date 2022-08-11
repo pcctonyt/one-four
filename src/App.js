@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo192.svg";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const name = "React";
+
+  const facts = {
+    releaseDate: "May 2013",
+    language: "JavaScript",
+    license: "MIT",
+  };
+
+  const AboutReact = (facts) =>
+    `Release date: ${facts.releaseDate}. Language: ${facts.releaseDate}. License: ${facts.license}.`;
+
+  return <div className="container"></div>;
+};
 
 export default App;
